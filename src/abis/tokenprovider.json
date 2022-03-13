@@ -1,0 +1,301 @@
+[
+  {
+    "anonymous": false,
+    "inputs": [
+        {
+        "indexed": false,
+        "internalType": "address",
+        "name": "booker",
+        "type": "address"
+        }
+    ],
+    "name": "Allowed",
+    "type": "event"
+    },
+    {
+    "anonymous": false,
+    "inputs": [
+        {
+        "indexed": false,
+        "internalType": "address",
+        "name": "booker",
+        "type": "address"
+        }
+    ],
+    "name": "Deny",
+    "type": "event"
+    },
+    {
+    "anonymous": false,
+    "inputs": [
+        {
+        "indexed": false,
+        "internalType": "address",
+        "name": "booker",
+        "type": "address"
+        }
+    ],
+    "name": "Finalized",
+    "type": "event"
+    },
+    {
+    "anonymous": false,
+    "inputs": [
+        {
+        "indexed": true,
+        "internalType": "address",
+        "name": "previousOwner",
+        "type": "address"
+        },
+        {
+        "indexed": true,
+        "internalType": "address",
+        "name": "newOwner",
+        "type": "address"
+        }
+    ],
+    "name": "OwnershipTransferred",
+    "type": "event"
+    },
+    {
+    "anonymous": false,
+    "inputs": [
+        {
+        "indexed": false,
+        "internalType": "address",
+        "name": "booker",
+        "type": "address"
+        }
+    ],
+    "name": "Supported",
+    "type": "event"
+    },
+    {
+    "inputs": [],
+    "name": "burnAmount",
+    "outputs": [
+        {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+        }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+    },
+    {
+    "inputs": [
+        {
+        "internalType": "address",
+        "name": "booker",
+        "type": "address"
+        }
+    ],
+    "name": "cancel",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+    },
+    {
+    "inputs": [
+        {
+        "internalType": "address",
+        "name": "booker",
+        "type": "address"
+        }
+    ],
+    "name": "confirm",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+    },
+    {
+    "inputs": [
+        {
+        "internalType": "address",
+        "name": "booker",
+        "type": "address"
+        },
+        {
+        "internalType": "bool",
+        "name": "payback",
+        "type": "bool"
+        }
+    ],
+    "name": "finalize",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+    },
+    {
+    "inputs": [],
+    "name": "getProfile",
+    "outputs": [
+        {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+        }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+    },
+    {
+    "inputs": [
+        {
+        "internalType": "address",
+        "name": "booker",
+        "type": "address"
+        }
+    ],
+    "name": "getStatus",
+    "outputs": [
+        {
+        "internalType": "enum TokenProvider.State",
+        "name": "result",
+        "type": "uint8"
+        }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+    },
+    {
+    "inputs": [
+        {
+        "internalType": "address",
+        "name": "ownerAddress",
+        "type": "address"
+        },
+        {
+        "internalType": "address",
+        "name": "tokenAddress",
+        "type": "address"
+        },
+        {
+        "internalType": "uint256",
+        "name": "minimum",
+        "type": "uint256"
+        },
+        {
+        "internalType": "uint256",
+        "name": "burning",
+        "type": "uint256"
+        }
+    ],
+    "name": "initialize",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+    },
+    {
+    "inputs": [],
+    "name": "owner",
+    "outputs": [
+        {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+        }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+    },
+    {
+    "inputs": [],
+    "name": "requireAmount",
+    "outputs": [
+        {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+        }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+    },
+    {
+    "inputs": [
+        {
+        "internalType": "uint8",
+        "name": "v",
+        "type": "uint8"
+        },
+        {
+        "internalType": "bytes32",
+        "name": "r",
+        "type": "bytes32"
+        },
+        {
+        "internalType": "bytes32",
+        "name": "s",
+        "type": "bytes32"
+        }
+    ],
+    "name": "supportTip",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+    },
+    {
+    "inputs": [],
+    "name": "token",
+    "outputs": [
+        {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+        }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+    },
+    {
+    "inputs": [
+        {
+        "internalType": "address",
+        "name": "newOwner",
+        "type": "address"
+        }
+    ],
+    "name": "transferOwnership",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+    },
+    {
+    "inputs": [
+        {
+        "internalType": "bytes32",
+        "name": "ipfshash",
+        "type": "bytes32"
+        }
+    ],
+    "name": "updateProfile",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+    },
+    {
+    "inputs": [
+        {
+        "internalType": "uint8",
+        "name": "v",
+        "type": "uint8"
+        },
+        {
+        "internalType": "bytes32",
+        "name": "r",
+        "type": "bytes32"
+        },
+        {
+        "internalType": "bytes32",
+        "name": "s",
+        "type": "bytes32"
+        }
+    ],
+    "name": "withdrawETH",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+    }
+]
